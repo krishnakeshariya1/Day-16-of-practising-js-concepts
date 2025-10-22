@@ -14,7 +14,7 @@ console.log(`the fist even number is :- ${firstEvenNumber}`);
 
 // find the first object where age is grater than 20
 const user = [
-    {name: "kashish" , age: 20 },
+    {name: "rani" , age: 20 },
     {name: "kirti" , age: 19 },
     {name: "raj" , age: 21 },
     {name: "rahul" , age: 22 },
@@ -40,3 +40,21 @@ const product = [
 ];
 let priceLessThan100 = product.find(val => val.price < 100);
 console.log(priceLessThan100)
+
+//  find the  index of first person with name length >4 , i use above array (user);
+let length = user.findIndex( val => val.name.length > 4);
+
+// find the first number which is perfect square
+let nums = [3,8,9,12,13,16,20];
+let perfectSquare = nums.find(val => Math.sqrt(val) % 1 === 0);
+console.log(`the perfect square is ${perfectSquare}`);
+
+// find the first string that start with B
+const names = ["samarth","kirti","bhawna","krishna"];
+const firstName = names.find(word => word.startsWith("b"));
+console.log(firstName);
+
+// find the index of the first number with is odd and greater than 30
+let mixNum = [12,25,40,33,45];
+let greaterOdd = mixNum.findIndex(val => val%2 !== 0 && val > 30);
+console.log(greaterOdd);
