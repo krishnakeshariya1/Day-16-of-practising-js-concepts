@@ -31,4 +31,12 @@ let type = ["sky", "flower","rain","forest"];
 let wordWithA = type.find(val => val.includes("a"));
 console.log(`The word that contain a is :- "${wordWithA}"`);
 
-
+//find the first product with price less than 100 
+const product = [
+    {name:"pen" , price: 220},
+    {name:"paper" , price: 70},
+    {name:"Book", price: 900},
+    {name:"pencil", price: 90},
+];
+let priceLessThan100 = product.find(val => val.price < 100);
+console.log(priceLessThan100)
