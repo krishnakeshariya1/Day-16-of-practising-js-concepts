@@ -31,4 +31,4 @@ let type = ["sky", "flower","rain","forest"];
 let wordWithA = type.find(val => val.includes("a"));
 console.log(`The word that contain a is :- "${wordWithA}"`);
 
-// 
+
